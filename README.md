@@ -3,7 +3,7 @@ RetroUnity is a frontend for the libretro API built in Unity.
 
 Added MacOS Support, and bumped the editor version to the latest.
 
-##Forked from [Scorr/RetroUnity](https://github.com/Scorr/RetroUnity)
+## Forked from [Scorr/RetroUnity](https://github.com/Scorr/RetroUnity)
 
 [webm](https://gfycat.com/PresentUnconsciousAmberpenshell)
 
