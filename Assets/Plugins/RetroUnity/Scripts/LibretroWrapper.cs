@@ -564,10 +564,13 @@ namespace RetroUnity {
 #if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
                 dllHandler = WindowsDLLHandler.Instance;
 #elif UNITY_ANDROID
-            dllHandler = AndroidDLLHandler.Instance;
+                dllHandler = AndroidDLLHandler.Instance;
+#elif UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
+                dllHandler = MacDLLHandler.Instance;
 #endif
                 if (dllHandler == null) return;
                 dllHandler.LoadCore(dllName);
+
 
                 RetroApiVersion = dllHandler.GetMethod<RetroApiVersionDelegate>("retro_api_version");
                 RetroInit = dllHandler.GetMethod<RetroInitDelegate>("retro_init");
